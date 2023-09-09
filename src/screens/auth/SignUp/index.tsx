@@ -1,4 +1,4 @@
-import { TouchableOpacity, Text, View } from "react-native";
+import { View } from "react-native";
 import Input from "../../../components/Input";
 import Button from "../../../components/Button";
 import * as S from "./style";
@@ -6,8 +6,11 @@ import * as S from "./style";
 export default function SignUp() {
   return (
     <S.Container>
-      <S.Content>
+      <S.Header>
         <S.Title>Cadastro</S.Title>
+      </S.Header>
+
+      <S.Content>
         <Input
           error={false}
           placeholder="Ex: Gabriel Henrique"
@@ -35,7 +38,7 @@ export default function SignUp() {
           type={"password"}
         />
       </S.Content>
-      <View style={{width:'80%', justifyContent:'center'}}>
+      <View style={{ width: "90%", marginTop: 60 }}>
         <Button title="Continuar" />
       </View>
     </S.Container>
