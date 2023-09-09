@@ -31,7 +31,7 @@ export default function SignIn() {
             title="E-mail:"
             type={"email"}
             placeholder="Ex: Diego@gmail.com"
-            error={true}
+            error={false}
           />
           <Spacer height={20} />
           <Input

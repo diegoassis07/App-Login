@@ -10,9 +10,11 @@ export const Header = styled.View`
   width: 100%;
   justify-content: center;
   align-items: center;
-  height: 200px;
+  height: 220px;
 `;
-export const Logo = styled.Image`
+export const Logo = styled.Image.attrs({
+  resizeMode: "contain",
+})`
   width: 232px;
   height: 96px;
 `;
