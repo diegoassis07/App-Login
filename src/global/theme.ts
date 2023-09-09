@@ -1,10 +1,11 @@
 export default {
   colors: {
     neutral_1: "#262525",
-    neutral_2: "#525252",
-    neutral_3: "#D8D8D8",
+    neutral_2: "#7a7a7a",
+    neutral_3: "#525252",
+    neutral_4: "#D8D8D8",
 
-    red: "#B50D0D",
+    red: "#DA1C1C",
   },
 
   fonts: {
