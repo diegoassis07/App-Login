@@ -1,20 +1,20 @@
-import { SafeAreaView } from "react-native-safe-area-context";
-
 import Logo from "../../../assets/Logo.png";
-import theme from "../../../global/theme";
 import * as S from "./style";
 import Input from "../../../components/Input";
+import Spacer from "../../../components/Spacer";
 
 export default function SignIn() {
   return (
-    <SafeAreaView style={{ flex: 1, backgroundColor: theme.colors.neutral_1 }}>
+    <S.Container>
       <S.Header>
         <S.Logo source={Logo} />
       </S.Header>
 
       <S.Form>
-        <Input type={"email"}/>
+        <Input type={"email"} placeholder="Ex: Diego@gmail.com" />
+        <Spacer height={30} />
+        <Input type={"password"} placeholder="********" />
       </S.Form>
-    </SafeAreaView>
+    </S.Container>
   );
 }
