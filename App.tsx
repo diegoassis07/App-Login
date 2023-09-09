@@ -9,6 +9,8 @@ import {
   Poppins_700Bold,
 } from "@expo-google-fonts/poppins";
 
+import { NavigationContainer } from "@react-navigation/native";
+
 export default function App() {
   const [fontsLoaded] = useFonts({
     Poppins_400Regular,
@@ -23,5 +25,9 @@ export default function App() {
     SplashScreen.hideAsync();
   }
 
-  return <Routes />;
+  return (
+    <NavigationContainer>
+      <Routes />
+    </NavigationContainer>
+  );
 }
