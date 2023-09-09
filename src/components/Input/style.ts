@@ -4,12 +4,12 @@ export const Container = styled.View``;
 
 export const Title = styled.Text`
   font-family: ${({ theme }) => theme.fonts.medium};
-  color: ${({ theme }) => theme.colors.neutral_3};
+  color: ${({ theme }) => theme.colors.neutral_4};
   font-size: 18px;
 `;
 
 export const ContainerInput = styled.View<{ error: boolean }>`
-  background-color: ${({ theme }) => theme.colors.neutral_3};
+  background-color: ${({ theme }) => theme.colors.neutral_4};
   width: 100%;
   height: 55px;
   border-radius: 10px;
