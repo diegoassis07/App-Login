@@ -1,4 +1,4 @@
-import AppLoading from 'expo-app-loading';
+import AppLoading from "expo-app-loading";
 import {
   useFonts,
   Poppins_100Thin,
@@ -19,8 +19,14 @@ import {
   Poppins_800ExtraBold_Italic,
   Poppins_900Black,
   Poppins_900Black_Italic,
-} from '@expo-google-fonts/poppins';
+} from "@expo-google-fonts/poppins";
+
+import AppRoutes from "./src/routes";
 
 export default function App() {
-  return <></>;
+  return (
+    <>
+      <AppRoutes />
+    </>
+  );
 }
