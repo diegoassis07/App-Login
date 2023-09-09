@@ -4,6 +4,9 @@ type IInputProps = {
 };
 
 import IconEmail from "../../assets/email.svg";
+import IconPassword from '../../assets/lock.svg';
+import IconEyeOpenned from '../../assets/eye-openned.svg'
+import IconEyeClosed from '../../assets/eye-closed.svg'
 
 import * as S from "./style";
 
@@ -15,6 +18,7 @@ const Input = ({ type, placeholder }: IInputProps) => {
         style={{ width: type === "password" ? "90%" : "95%" }}
         placeholder={placeholder}
       />
+      {type === "password" && <IconEyeClosed/>}
     </S.ContainerInput>
   );
 };
