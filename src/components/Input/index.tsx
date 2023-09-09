@@ -11,7 +11,10 @@ const Input = ({ type, placeholder }: IInputProps) => {
   return (
     <S.ContainerInput>
       <IconEmail />
-      <S.Input placeholder={placeholder} />
+      <S.Input
+        style={{ width: type === "password" ? "90%" : "95%" }}
+        placeholder={placeholder}
+      />
     </S.ContainerInput>
   );
 };
