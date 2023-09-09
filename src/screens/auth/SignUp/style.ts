@@ -12,7 +12,8 @@ export const Content = styled.View`
 `;
 
 export const Header = styled.View`
-  height: 150px;
+  width: 100%;
+  height: 100px;
   justify-content: center;
   align-items: center;
 `;

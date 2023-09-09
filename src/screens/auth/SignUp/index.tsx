@@ -2,10 +2,12 @@ import { View } from "react-native";
 import Input from "../../../components/Input";
 import Button from "../../../components/Button";
 import * as S from "./style";
+import Spacer from "../../../components/Spacer";
 
 export default function SignUp() {
   return (
     <S.Container>
+      <Spacer height={30} />
       <S.Header>
         <S.Title>Cadastro</S.Title>
       </S.Header>
@@ -20,7 +22,7 @@ export default function SignUp() {
 
         <Input
           error={false}
-          placeholder="Ex: seuemail@gmail.com"
+          placeholder="Seuemail@gmail.com"
           title="E-mail"
           type={"email"}
         />
