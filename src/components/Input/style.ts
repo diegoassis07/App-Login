@@ -26,4 +26,8 @@ export const Input = styled.TextInput`
   padding-left: 5px;
 `;
 
-export const HidePaswword = styled.TouchableOpacity``;
+export const HidePaswword = styled.TouchableOpacity`
+  height: 40px;
+  align-items: center;
+  justify-content: center;
+`;

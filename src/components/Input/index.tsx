@@ -42,11 +42,15 @@ const Input = ({ type, placeholder, title }: IInputProps) => {
           secureTextEntry={secureTextEntry}
         />
 
-        <S.HidePaswword
-          onPress={() => setSecureTextEntry((previousState) => !previousState)}
-        >
-          {type === "password" && getIconEye[`${secureTextEntry}`]}
-        </S.HidePaswword>
+        {type === "password" && (
+          <S.HidePaswword
+            onPress={() =>
+              setSecureTextEntry((previousState) => !previousState)
+            }
+          >
+            {getIconEye[`${secureTextEntry}`]}
+          </S.HidePaswword>
+        )}
       </S.ContainerInput>
     </S.Container>
   );
