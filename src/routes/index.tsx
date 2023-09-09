@@ -1,11 +1,5 @@
-import SignIn from "../screens/auth/SiginIn";
-import SignUp from "../screens/auth/SignUp";
+import Auth from "./auth";
 
 export default function AppRoutes() {
-  return (
-    <>
-      <SignIn />
-      <SignUp />
-    </>
-  );
+  return <Auth />;
 }
