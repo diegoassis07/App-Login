@@ -36,3 +36,29 @@ export const Form = styled.View`
   width: 90%;
   margin-top: 25px;
 `;
+
+export const ButtonRecoveryPassword = styled.TouchableOpacity`
+  justify-content: center;
+  align-items: center;
+`;
+
+export const TitleRecoveryPassword = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.medium};
+  color: ${({ theme }) => theme.colors.neutral_4};
+  font-size: 16px;
+  text-decoration-line: underline;
+`;
+
+export const ButtonRegister = styled.TouchableOpacity`
+  width: 90%;
+  margin-top: 25px;
+  justify-content: center;
+  align-items: center;
+`;
+
+export const TitleRegister = styled.Text`
+  font-family: ${({ theme }) => theme.fonts.medium};
+  color: ${({ theme }) => theme.colors.neutral_4};
+  font-size: 20px;
+  text-decoration-line: underline;
+`;

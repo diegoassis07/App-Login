@@ -4,8 +4,18 @@ import Input from "../../../components/Input";
 import Spacer from "../../../components/Spacer";
 import Button from "../../../components/Button";
 import { View } from "react-native";
+import { useNavigation } from "@react-navigation/native";
+import { RootAuthRoutesList } from "../../../routes/auth";
+import { NativeStackNavigationProp } from "@react-navigation/native-stack";
+
+type SignInScreenProps = NativeStackNavigationProp<
+  RootAuthRoutesList,
+  "SignIn"
+>;
 
 export default function SignIn() {
+  const navigation = useNavigation<SignInScreenProps>();
+
   return (
     <S.Container>
       <S.Header>
@@ -16,7 +26,6 @@ export default function SignIn() {
         <Spacer height={30} />
         <S.Title>Login</S.Title>
 
-        <Spacer height={5} />
         <S.Form>
           <Input
             title="E-mail:"
@@ -24,7 +33,7 @@ export default function SignIn() {
             placeholder="Ex: Diego@gmail.com"
             error={true}
           />
-          <Spacer height={30} />
+          <Spacer height={20} />
           <Input
             title="Senha:"
             type={"password"}
@@ -33,10 +42,29 @@ export default function SignIn() {
           />
         </S.Form>
 
-        <Spacer height={55} />
+        <Spacer height={20} />
 
-        <View style={{ width: "90%" }}>
+        <View
+          style={{
+            width: "90%",
+            alignItems: "flex-end",
+          }}
+        >
+          <S.ButtonRecoveryPassword>
+            <S.TitleRecoveryPassword>
+              Esqueceu sua senha?
+            </S.TitleRecoveryPassword>
+          </S.ButtonRecoveryPassword>
+        </View>
+
+        <Spacer height={45} />
+
+        <View style={{ width: "90%", alignItems: "center" }}>
           <Button title="Entrar" />
+
+          <S.ButtonRegister onPress={() => navigation.navigate("SignUp")}>
+            <S.TitleRegister>Crie sua conta</S.TitleRegister>
+          </S.ButtonRegister>
         </View>
       </S.Background>
     </S.Container>
