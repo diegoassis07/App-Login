@@ -9,7 +9,10 @@ import {
   Poppins_700Bold,
 } from "@expo-google-fonts/poppins";
 
+import { StatusBar } from 'expo-status-bar';
+
 import { NavigationContainer } from "@react-navigation/native";
+import theme from "./src/global/theme";
 
 export default function App() {
   const [fontsLoaded] = useFonts({
@@ -27,6 +30,7 @@ export default function App() {
 
   return (
     <NavigationContainer>
+      <StatusBar/>
       <Routes />
     </NavigationContainer>
   );
