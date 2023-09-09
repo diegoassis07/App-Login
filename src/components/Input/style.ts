@@ -8,7 +8,7 @@ export const Title = styled.Text`
   font-size: 18px;
 `;
 
-export const ContainerInput = styled.View`
+export const ContainerInput = styled.View<{ error: boolean }>`
   background-color: ${({ theme }) => theme.colors.neutral_3};
   width: 100%;
   height: 55px;
@@ -16,7 +16,8 @@ export const ContainerInput = styled.View`
   padding: 5px;
   align-items: center;
   flex-direction: row;
-
+  border: 1.5px solid
+    ${({ theme, error }) => (error ? theme.colors.red : theme.colors.neutral_1)};
   padding-right: 10px;
   justify-content: center;
 `;
