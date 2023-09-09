@@ -1,5 +1,5 @@
 import Auth from "./auth";
 
-export default function AppRoutes() {
+export default function Routes() {
   return <Auth />;
 }
