@@ -1,5 +1,5 @@
 type IInputProps = {
-  type: "email" | "password";
+  type: "email" | "password" | "person" | "phone";
   placeholder: string;
   title: string;
   error: boolean;
