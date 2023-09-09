@@ -11,9 +11,9 @@ export default function SignIn() {
       </S.Header>
 
       <S.Form>
-        <Input type={"email"} placeholder="Ex: Diego@gmail.com" />
+        <Input title="E-mail:" type={"email"} placeholder="Ex: Diego@gmail.com" />
         <Spacer height={30} />
-        <Input type={"password"} placeholder="********" />
+        <Input title="Senha:" type={"password"} placeholder="********" />
       </S.Form>
     </S.Container>
   );
